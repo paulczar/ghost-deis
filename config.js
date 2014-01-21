@@ -49,11 +49,11 @@ config = {
         database: {
             client: 'mysql',
             connection: {
-                host: process.env.DB_SERVER
-                user: 'ghost'
-                password: 'scary'
-                database: 'ghost'
-                port: '3306'
+                host: process.env.DB_SERVER,
+                user: 'ghost',
+                password: 'scary',
+                database: 'ghost',
+		charset: 'utf8'
             },
             debug: false
         },
