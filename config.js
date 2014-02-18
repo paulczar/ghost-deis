@@ -14,7 +14,7 @@ config = {
             connection: {
                 host: process.env.DB_SERVER,
                 user: 'ghost',
-                password: 'scary',
+                password: process.env.DB_PASS,
                 database: 'ghost',
                 charset: 'utf8'
             },
@@ -39,8 +39,8 @@ config = {
             connection: {
                 host: process.env.DB_SERVER,
                 user: 'ghost',
-                password: 'scary',
-                database: 'ghost',
+                password: process.env.DB_PASS,
+                database:' ghost'
 		charset: 'utf8'
             },
             debug: false
